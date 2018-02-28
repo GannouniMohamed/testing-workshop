@@ -6,7 +6,7 @@ test('getTokenFromHeader returns null if there is no token', () => {
 })
 
 test('getTokenFromHeader returns null if token is INVALID', () => {
-  const result = getTokenFromHeader({headers: { authorization: 'hiiiiii!' }})
+  const result = getTokenFromHeader({headers: {authorization: 'hiiiiii!'}})
   expect(result).toBe(null)
 })
 
